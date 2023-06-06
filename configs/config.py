@@ -142,6 +142,20 @@ _C.EGTEA_GAZEP.ANNS_PATH = "/scratch/sid/EGTEA-GAZE-PLUS/annotations"
 _C.EGTEA_GAZEP.FRAMES_PATH = "/ssd_scratch/cvit/sid/EGTEA-GAZE-PLUS/frames"
 
 # -----------------------------------------------------------------------------
+# Ego Error dataset options
+# -----------------------------------------------------------------------------
+_C.EGO_ERROR = CfgNode()
+
+# Path to the videos
+_C.EGO_ERROR.VIDEOS_PATH = "/EGO_ERROR/videos"
+
+# Path to the annotations
+_C.EGO_ERROR.ANNS_PATH = "/EGO_ERROR/annotations"
+
+# Path to save the frames
+_C.EGO_ERROR.FRAMES_PATH = "/EGO_ERROR/frames"
+
+# -----------------------------------------------------------------------------
 # TCC options
 # -----------------------------------------------------------------------------
 _C.TCC = CfgNode()
