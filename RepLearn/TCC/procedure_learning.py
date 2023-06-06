@@ -5,13 +5,13 @@ import pickle
 import torch
 import numpy as np
 
-import utils.logger as logging
+from folder_utils import logger as logging
 from datasets.transforms import get_transforms
 from datasets.construct_loader import get_loader
-from utils.parser import parse_args, load_config
-from utils.subset_selection import SelfSupervisionSummarization
-from utils.utils import get_category_metadata
-from RepLearn.TCC.utils import (
+from folder_utils.parser import parse_args, load_config
+from folder_utils.subset_selection import SelfSupervisionSummarization
+from folder_utils.file_utils import get_category_metadata
+from RepLearn.TCC.tcc_utils import (
     get_model,
     get_embds,
     gen_print_results,

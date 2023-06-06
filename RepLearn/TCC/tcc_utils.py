@@ -12,7 +12,7 @@ from fcmeans import FCM
 from maxflow.fastmin import aexpansion_grid
 from sklearn.cluster import MiniBatchKMeans
 
-import utils.logger as logging
+from folder_utils import logger as logging
 from RepLearn.TCC.models import Embedder
 from evaluate.metrics import compute_align_MoF_UoI
 

@@ -6,8 +6,8 @@ import os
 
 import torch
 
-import utils.logger as logging
-from utils.utils import _extract_frames_h5py, _sample_frames_gen_labels_h5py
+import folder_utils.logger as logging
+from folder_utils.file_utils import _extract_frames_h5py, _sample_frames_gen_labels_h5py
 
 
 logger = logging.get_logger(__name__)

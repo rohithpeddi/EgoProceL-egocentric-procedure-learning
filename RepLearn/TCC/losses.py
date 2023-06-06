@@ -3,7 +3,7 @@ import torch
 from torch.nn import functional as F
 from scipy.spatial.distance import cdist
 
-from RepLearn.TCC.utils import get_lav_weights, generate_unique_video_steps
+from RepLearn.TCC.tcc_utils import get_lav_weights, generate_unique_video_steps
 
 
 def calculate_similarity(embeddings1, embeddings2, temperature):

@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-import utils.logger as logging
+import folder_utils.logger as logging
 
 
 logger = logging.get_logger(__name__)

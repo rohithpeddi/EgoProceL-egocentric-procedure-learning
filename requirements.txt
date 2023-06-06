@@ -28,7 +28,7 @@ Markdown==3.4.1
 MarkupSafe==2.1.1
 matplotlib==3.4.2
 mccabe==0.6.1
-numpy==1.23.5
+#numpy==1.23.5
 oauthlib==3.2.2
 opencv-contrib-python==4.5.1.48
 opencv-python==4.5.2.52

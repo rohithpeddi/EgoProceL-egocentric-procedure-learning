@@ -9,11 +9,11 @@ from torch.utils.data import DataLoader
 from torch.cuda.amp import GradScaler, autocast
 from torch.utils.tensorboard import SummaryWriter
 
-import utils.logger as logging
-from utils.parser import parse_args, load_config
+from folder_utils import logger as logging
+from folder_utils.parser import parse_args, load_config
 from RepLearn.TCC.datasets import VideoAlignmentLoader
 from RepLearn.TCC.losses import temporal_cycle_consistency_loss
-from RepLearn.TCC.utils import get_model, get_optimizer, save_checkpoint
+from RepLearn.TCC.tcc_utils import get_model, get_optimizer, save_checkpoint
 
 
 logger = logging.get_logger(__name__)
@@ -55,7 +55,7 @@ def main(cfg):
 
     # model
     model = get_model(cfg)
-    model = torch.nn.DataParallel(model, device_ids=[0, 1])
+    model = torch.nn.DataParallel(model, device_ids=[0])
     model = model.to(device)
     optimizer = get_optimizer(model, cfg)
 

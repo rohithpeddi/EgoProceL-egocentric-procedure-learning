@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 from torch.utils.data import Dataset, DataLoader
 
-from utils.parser import parse_args, load_config
-from utils.utils import _extract_frames_h5py, gen_labels
+from folder_utils.parser import parse_args, load_config
+from folder_utils.file_utils import _extract_frames_h5py, gen_labels
 
 
 class VideoAlignmentLoader(Dataset):
@@ -65,7 +65,7 @@ class VideoAlignmentLoader(Dataset):
             )
             h5_file_name = _extract_frames_h5py(
                 video,
-                self.cfg.CMU_KITCHENS.FRAMES_PATH
+                self.cfg.EGO_ERROR.FRAMES_PATH
             )
             frames = self.get_frames_h5py(
                 h5_file_name,

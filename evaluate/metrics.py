@@ -1,5 +1,5 @@
 
-import utils.logger as logging
+import folder_utils.logger as logging
 
 import torch
 import numpy as np

@@ -6,12 +6,12 @@ import os
 
 import torch
 
-from utils.utils import (
+from folder_utils.file_utils import (
 	get_category_metadata,
 	_extract_frames_h5py,
 	_sample_frames_gen_labels_h5py
 )
-import utils.logger as logging
+import folder_utils.logger as logging
 
 logger = logging.get_logger(__name__)
 
