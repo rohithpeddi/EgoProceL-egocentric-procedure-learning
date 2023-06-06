@@ -1,11 +1,9 @@
 
-import folder_utils.logger as logging
-
-import torch
 import numpy as np
-import torch.nn.functional as F
+import torch
 from scipy.optimize import linear_sum_assignment
 
+import folder_utils.logger as logging
 
 logger = logging.get_logger(__name__)
 
@@ -79,7 +77,7 @@ def compute_align_MoF_UoI(
             gt_k = Z_gt_perm[:, idx_k]
 
             intersect = np.multiply(pred_k, gt_k)
-            union = np.clip((pred_k + gt_k).astype(np.float), 0, 1)
+            union = np.clip((pred_k + gt_k).astype(np.float64), 0, 1)
 
             n_intersect = np.sum(intersect)
             n_union = np.sum(union)
@@ -119,7 +117,7 @@ def compute_align_MoF_UoI(
             return MoF, IoU, Precision, step_wise_metrics
     else:
         intersect = np.multiply(Z_pred_perm, Z_gt_perm)
-        union = np.clip((Z_pred_perm + Z_gt_perm).astype(np.float), 0, 1)
+        union = np.clip((Z_pred_perm + Z_gt_perm).astype(np.float64), 0, 1)
 
         n_intersect = np.sum(intersect)
         n_union = np.sum(union)

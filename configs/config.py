@@ -15,20 +15,17 @@ _C = CfgNode()
 _C.ANNOTATION = CfgNode()
 
 # Path to the original videos
-_C.ANNOTATION.VIDEOS = ("/Volumes/Storage/Egocentric/procedure_learning/"
-                  "EgoProcL_raw_data")
+_C.ANNOTATION.VIDEOS = "/data/error_dataset/categories/"
 
 # Path to annotations
-_C.ANNOTATION.PATH = ("/Volumes/Storage/Egocentric/procedure_learning/"
-                       "EgoProcL_dataset_CMU_EGTEA/annotations")
+_C.ANNOTATION.PATH = "/data/error_dataset/annotations/"
 
 # Path to the directory containing annotations created by ELAN 6.0
-_C.ANNOTATION.ELAN_DIR = ("/Volumes/Storage/Egocentric/procedure_learning/"
-                           "ELAN_annotations")
+_C.ANNOTATION.ELAN_DIR = "/data/error_dataset/ELAN_annotations/"
 
 # Name of the dataset to use for generating annotation files
 # Valid options are: ['CMU_Kitchens', 'EGTEA']
-_C.ANNOTATION.DATASET_NAME = 'CMU_Kitchens'
+_C.ANNOTATION.DATASET_NAME = 'EGO_ERROR'
 
 """
 Name of the category to use for generating annotation files
@@ -70,7 +67,7 @@ _C.DATA_LOADER.SHUFFLE = True
 
 # Data loader name
 # Options are ['CMU_Kitchens', 'EgoProcL']
-_C.DATA_LOADER.NAME = 'CMU_Kitchens'
+_C.DATA_LOADER.NAME = 'Ego_Error'
 
 # -----------------------------------------------------------------------------
 # Training options
@@ -255,7 +252,7 @@ _C.TCC.TCC_AND_LAV = False
 _C.TCC.RANDOM_RESULTS = False
 
 # Directory to save the embeddings
-_C.TCC.EMBDS_DIR = '/ssd_scratch/cvit/sid/embeddings/'
+_C.TCC.EMBDS_DIR = '/data/error_dataset/embeddings/'
 
 # -----------------------------------------------------------------------------
 # LAV options

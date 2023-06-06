@@ -11,7 +11,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 from folder_utils import logger as logging
 from folder_utils.parser import parse_args, load_config
-from RepLearn.TCC.datasets import VideoAlignmentLoader
+from RepLearn.TCC.tcc_datasets import VideoAlignmentLoader
 from RepLearn.TCC.losses import temporal_cycle_consistency_loss
 from RepLearn.TCC.tcc_utils import get_model, get_optimizer, save_checkpoint
 

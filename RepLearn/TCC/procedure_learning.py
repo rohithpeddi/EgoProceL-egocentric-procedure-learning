@@ -57,7 +57,7 @@ def procedure_learning(cfg):
         for key, value in state_dict.items():
             new_state_dict[key.replace('module.', '')] = value
         model.load_state_dict(new_state_dict)
-    model = model.to('cuda:1')
+    model = model.to('cuda:0')
     model.eval()
 
     # Generating features

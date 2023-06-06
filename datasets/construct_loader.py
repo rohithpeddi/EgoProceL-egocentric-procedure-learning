@@ -9,10 +9,13 @@ from datasets.PC_Assembly import PC_Assembly
 from datasets.EGTEA_GazeP import EGTEA_GazeP
 from datasets.CMU_Kitchens import CMU_Kitchens
 from datasets.PC_Disassembly import PC_Disassembly
+from datasets.Ego_Error import Ego_Error
 
 
 def get_loader(cfg, mode, transforms=None):
     assert mode in ['train', 'test', 'all', 'val']
+    if cfg.DATA_LOADER.NAME == 'Ego_Error':
+        dataset = Ego_Error(cfg, mode=mode, transforms=transforms)
     if cfg.DATA_LOADER.NAME == 'CMU_Kitchens':
         dataset = CMU_Kitchens(cfg, mode=mode, transforms=transforms)
     elif cfg.DATA_LOADER.NAME == 'EGTEA_GazeP':
