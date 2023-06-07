@@ -14,7 +14,7 @@ MISC:
   DEBUG_VIZ_PATH: ""
   VERBOSE: True
 LOG:
-  DIR: /data/logs/SpicedHotChocolate
+  DIR: /data/error_dataset/logs/SpicedHotChocolate
   LEVEL: debug
 TCC:
   DATA_PATH: /data/error_dataset/categories/SpicedHotChocolate
@@ -26,6 +26,7 @@ TCC:
   CONTEXT_STRIDE: 15
   LSTM: False
   BILSTM: False
+  MODEL_PATH: /data/logs/SpicedHotChocolate/checkpoint_10000_loss-10.0112.pt
 LAV:
   USE_CIDM: True
   CONTRIB_PERCENT: 0.1
