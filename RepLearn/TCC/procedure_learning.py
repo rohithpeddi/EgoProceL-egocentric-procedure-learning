@@ -182,7 +182,7 @@ def procedure_learning(cfg):
             overall_preds = run_kmeans(cfg, embeddings_)
 
     # Evaluate the entire thing
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     gen_print_results(
         cfg,
         torch.from_numpy(np.array(gt)),

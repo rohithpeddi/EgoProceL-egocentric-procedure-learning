@@ -26,7 +26,7 @@ TCC:
   CONTEXT_STRIDE: 15
   LSTM: False
   BILSTM: False
-  MODEL_PATH: /data/logs/TomatoMozzarellaSalad/checkpoint_10000_loss-11.3231.pt
+  MODEL_PATH: /data/logs/TomatoMozzarellaSalad/checkpoint_08309_loss-7.3087.pt
 LAV:
   USE_CIDM: True
   CONTRIB_PERCENT: 0.1

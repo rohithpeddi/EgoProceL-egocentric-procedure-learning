@@ -26,7 +26,7 @@ TCC:
   CONTEXT_STRIDE: 15
   LSTM: False
   BILSTM: False
-  MODEL_PATH: /data/logs/Pinwheels/checkpoint_10000_loss-11.6421.pt
+  MODEL_PATH: /data/logs/Pinwheels/checkpoint_04230_loss-5.3154.pt
 LAV:
   USE_CIDM: True
   CONTRIB_PERCENT: 0.1

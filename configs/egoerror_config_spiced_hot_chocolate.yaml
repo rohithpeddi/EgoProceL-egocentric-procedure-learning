@@ -26,7 +26,7 @@ TCC:
   CONTEXT_STRIDE: 15
   LSTM: False
   BILSTM: False
-  MODEL_PATH: /data/logs/SpicedHotChocolate/checkpoint_10000_loss-10.0112.pt
+  MODEL_PATH: /data/logs/SpicedHotChocolate/checkpoint_09409_loss-6.9992.pt
 LAV:
   USE_CIDM: True
   CONTRIB_PERCENT: 0.1
