@@ -73,7 +73,7 @@ def get_embds(
         frames = torch.from_numpy(
             frames.numpy()
         ).permute(0, 1, 4, 2, 3)
-        output = model(frames.to('cuda:1'))
+        output = model(frames.to('cuda:0'))
         embds.extend(output.detach().cpu().numpy())
     embds = np.concatenate(embds, axis=0)
     embds = embds[:seq_len]

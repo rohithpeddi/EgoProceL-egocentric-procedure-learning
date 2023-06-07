@@ -27,7 +27,7 @@ def get_category_metadata(cfg, metadata=None):
     if cfg.ANNOTATION.DATASET_NAME == 'EGO_ERROR':
         keysteps_dict = {
             'SpicedHotChocolate': 7,
-            'TomatoMozzarellaSalad': 8,
+            'TomatoMozzarellaSalad': 9,
             'Pinwheels': 20,
         }
         return {'num_keysteps': keysteps_dict[cfg.ANNOTATION.CATEGORY]}

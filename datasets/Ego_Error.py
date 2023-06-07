@@ -34,15 +34,6 @@ class Ego_Error(torch.utils.data.Dataset):
 		assert os.path.isdir(annotations_dir), ('Wrong annotations path '
 		                                        'provided!')
 		self.category = self.cfg.ANNOTATION.CATEGORY
-		assert self.category in [
-			'BaconAndEggs',
-			'Cheeseburger',
-			'ContinentalBreakfast',
-			'GreekSalad',
-			'PastaSalad',
-			'Pizza',
-			'TurkeySandwich',
-		]
 		if self.cfg.MISC.VERBOSE:
 			logger.debug('Processing category: {}'.format(self.category))
 		videos_path = os.path.join(videos_dir, self.category)
@@ -81,6 +72,8 @@ class Ego_Error(torch.utils.data.Dataset):
 		)
 		for video in self.videos:
 			video_name = video.split('/')[-1].split('.')[0]
+			if '_360p' in video_name:
+				video_name = video_name[:-5]
 			for annotation in self.annotations:
 				if video_name in annotation:
 					self.package.append((video, annotation))

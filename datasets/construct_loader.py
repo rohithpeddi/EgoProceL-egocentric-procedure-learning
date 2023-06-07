@@ -16,7 +16,7 @@ def get_loader(cfg, mode, transforms=None):
     assert mode in ['train', 'test', 'all', 'val']
     if cfg.DATA_LOADER.NAME == 'Ego_Error':
         dataset = Ego_Error(cfg, mode=mode, transforms=transforms)
-    if cfg.DATA_LOADER.NAME == 'CMU_Kitchens':
+    elif cfg.DATA_LOADER.NAME == 'CMU_Kitchens':
         dataset = CMU_Kitchens(cfg, mode=mode, transforms=transforms)
     elif cfg.DATA_LOADER.NAME == 'EGTEA_GazeP':
         dataset = EGTEA_GazeP(cfg, mode=mode, transforms=transforms)
