@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: /data/lab/rohith/ptg/BroccoliStirFry/normal
+  CATEGORY: /data/egoproceldata/BroccoliStirFry/videos/normal
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,14 +7,14 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /data/lab/rohith/ptg/BroccoliStirFry/annotations/normal
-  FRAMES_PATH: /data/lab/rohith/ptg/BroccoliStirFry/frames
-  VIDEOS_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal
+  ANNS_PATH: /data/egoproceldata/BroccoliStirFry/annotations/normal
+  FRAMES_PATH: /data/egoproceldata/BroccoliStirFry/frames
+  VIDEOS_PATH: /data/egoproceldata/BroccoliStirFry/videos/normal
 LAV:
   CONTRIB_PERCENT: 0.1
   USE_CIDM: true
 LOG:
-  DIR: /data/lab/rohith/ptg/logs/BroccoliStirFry
+  DIR: /data/egoproceldata/BroccoliStirFry/logs
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal
+  DATA_PATH: /data/egoproceldata/BroccoliStirFry/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt

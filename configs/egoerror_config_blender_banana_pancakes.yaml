@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: /data/lab/rohith/ptg/BlenderBananaPancakes/normal
+  CATEGORY: /data/egoproceldata/BlenderBananaPancakes/videos/normal
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,14 +7,15 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /data/lab/rohith/ptg/BlenderBananaPancakes/annotations/normal
-  FRAMES_PATH: /data/lab/rohith/ptg/BlenderBananaPancakes/frames
-  VIDEOS_PATH: /data/lab/rohith/ptg/BlenderBananaPancakes/normal
+
+  ANNS_PATH: /data/egoproceldata/BlenderBananaPancakes/annotations/normal
+  FRAMES_PATH: /data/egoproceldata/BlenderBananaPancakes/frames
+  VIDEOS_PATH: /data/egoproceldata/BlenderBananaPancakes/videos/normal
 LAV:
   CONTRIB_PERCENT: 0.1
   USE_CIDM: true
 LOG:
-  DIR: /data/lab/rohith/ptg/logs/BlenderBananaPancakes
+  DIR: /data/egoproceldata/BlenderBananaPancakes/logs
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -22,8 +23,8 @@ MISC:
 TCC:
   BATCH_SIZE: 2
   BILSTM: false
-  CONTEXT_STRIDE: 15
-  DATA_PATH: /data/lab/rohith/ptg/BlenderBananaPancakes/normal
+  CONTEXT_STRIDE:
+  DATA_PATH: /data/egoproceldata/BlenderBananaPancakes/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt

@@ -39,18 +39,20 @@ def update_yaml_file(recipe_name):
     with open('egoerror_config_default.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
-    root_folder = "/data/lab/rohith/ptg"
+    root_folder = "/data/egoproceldata"
+    recipe_data_path = os.path.join(root_folder, recipe_name_folder)
+    recipe_logs_folder = os.path.join(recipe_data_path, "logs")
+    recipe_videos_folder = os.path.join(recipe_data_path, "videos")
+    recipe_annotations_folder = os.path.join(recipe_data_path, "annotations")
 
-    recipe_logs_folder = f"{root_folder}/logs/{recipe_name_folder}"
-    recipe_data_path = f"{root_folder}/{recipe_name_folder}"
-
-    data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_data_path, "normal")
     data['LOG']['DIR'] = recipe_logs_folder
-    data['TCC']['DATA_PATH'] = os.path.join(recipe_data_path, "normal")
 
-    data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_data_path, "annotations/normal")
+    data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_videos_folder, "normal")
+    data['TCC']['DATA_PATH'] = os.path.join(recipe_videos_folder, "normal")
+
+    data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_annotations_folder, "normal")
     data['EGO_ERROR']['FRAMES_PATH'] = os.path.join(recipe_data_path, 'frames')
-    data['EGO_ERROR']['VIDEOS_PATH'] = os.path.join(recipe_data_path, 'normal')
+    data['EGO_ERROR']['VIDEOS_PATH'] = os.path.join(recipe_videos_folder, 'normal')
 
     if os.path.exists(recipe_logs_folder):
         # Parse the logs folder to get the last checkpoint or checkpoint with the lowest loss
