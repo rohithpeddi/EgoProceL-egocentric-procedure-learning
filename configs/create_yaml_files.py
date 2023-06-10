@@ -42,15 +42,15 @@ def update_yaml_file(recipe_name):
     root_folder = "/data/lab/rohith/ptg"
 
     recipe_logs_folder = f"{root_folder}/logs/{recipe_name_folder}"
-    recipe_data_path = f"{root_folder}/{recipe_name_folder}/normal/"
+    recipe_data_path = f"{root_folder}/{recipe_name_folder}"
 
-    data['ANNOTATION']['CATEGORY'] = recipe_name_folder
+    data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_data_path, "normal")
     data['LOG']['DIR'] = recipe_logs_folder
     data['TCC']['DATA_PATH'] = recipe_data_path
 
-    data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_data_path, 'annotations')
+    data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_data_path, "annotations/normal")
     data['EGO_ERROR']['FRAMES_PATH'] = os.path.join(recipe_data_path, 'frames')
-    data['EGO_ERROR']['VIDEOS_PATH'] = os.path.join(recipe_data_path, 'categories')
+    data['EGO_ERROR']['VIDEOS_PATH'] = os.path.join(recipe_data_path, 'normal')
 
     if os.path.exists(recipe_logs_folder):
         # Parse the logs folder to get the last checkpoint or checkpoint with the lowest loss

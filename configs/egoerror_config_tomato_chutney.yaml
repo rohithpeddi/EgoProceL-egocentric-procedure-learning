@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: TomatoChutney
+  CATEGORY: /data/lab/rohith/ptg/TomatoChutney/normal
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,9 +7,9 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /data/lab/rohith/ptg/TomatoChutney/normal/annotations
-  FRAMES_PATH: /data/lab/rohith/ptg/TomatoChutney/normal/frames
-  VIDEOS_PATH: /data/lab/rohith/ptg/TomatoChutney/normal/categories
+  ANNS_PATH: /data/lab/rohith/ptg/TomatoChutney/annotations/normal
+  FRAMES_PATH: /data/lab/rohith/ptg/TomatoChutney/frames
+  VIDEOS_PATH: /data/lab/rohith/ptg/TomatoChutney/normal
 LAV:
   CONTRIB_PERCENT: 0.1
   USE_CIDM: true
@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /data/lab/rohith/ptg/TomatoChutney/normal/
+  DATA_PATH: /data/lab/rohith/ptg/TomatoChutney
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt
