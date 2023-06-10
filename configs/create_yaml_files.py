@@ -46,7 +46,7 @@ def update_yaml_file(recipe_name):
 
     data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_data_path, "normal")
     data['LOG']['DIR'] = recipe_logs_folder
-    data['TCC']['DATA_PATH'] = recipe_data_path
+    data['TCC']['DATA_PATH'] = os.path.join(recipe_data_path, "normal")
 
     data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_data_path, "annotations/normal")
     data['EGO_ERROR']['FRAMES_PATH'] = os.path.join(recipe_data_path, 'frames')

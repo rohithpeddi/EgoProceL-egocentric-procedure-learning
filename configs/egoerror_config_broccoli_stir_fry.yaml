@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /data/lab/rohith/ptg/BroccoliStirFry
+  DATA_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt
