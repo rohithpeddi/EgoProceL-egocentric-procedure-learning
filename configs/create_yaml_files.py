@@ -47,6 +47,9 @@ def update_yaml_file(recipe_name):
 
     data['LOG']['DIR'] = recipe_logs_folder
 
+    data['LAV']['USE_CIDM'] = True
+    data['LAV']['CONTRIB_PERCENT'] = 0.3
+
     data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_videos_folder, "normal")
     data['TCC']['DATA_PATH'] = os.path.join(recipe_videos_folder, "normal")
 

@@ -7,12 +7,11 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-
   ANNS_PATH: /data/egoproceldata/BlenderBananaPancakes/annotations/normal
   FRAMES_PATH: /data/egoproceldata/BlenderBananaPancakes/frames
   VIDEOS_PATH: /data/egoproceldata/BlenderBananaPancakes/videos/normal
 LAV:
-  CONTRIB_PERCENT: 0.1
+  CONTRIB_PERCENT: 0.3
   USE_CIDM: true
 LOG:
   DIR: /data/egoproceldata/BlenderBananaPancakes/logs

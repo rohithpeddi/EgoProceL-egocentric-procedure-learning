@@ -11,7 +11,7 @@ EGO_ERROR:
   FRAMES_PATH: /data/egoproceldata/MicrowaveFrenchToast/frames
   VIDEOS_PATH: /data/egoproceldata/MicrowaveFrenchToast/videos/normal
 LAV:
-  CONTRIB_PERCENT: 0.1
+  CONTRIB_PERCENT: 0.3
   USE_CIDM: true
 LOG:
   DIR: /data/egoproceldata/MicrowaveFrenchToast/logs
