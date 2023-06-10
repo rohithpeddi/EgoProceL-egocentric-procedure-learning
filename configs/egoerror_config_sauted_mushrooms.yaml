@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.1
   USE_CIDM: true
 LOG:
-  DIR: /data/error_dataset/logs/SautedMushrooms
+  DIR: /data/lab/rohith/ptg/logs/SautedMushrooms
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /data/error_dataset/categories/SautedMushrooms
+  DATA_PATH: /data/lab/rohith/ptg/SautedMushrooms/normal/
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt

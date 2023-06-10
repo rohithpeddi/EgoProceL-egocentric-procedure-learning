@@ -39,15 +39,17 @@ def update_yaml_file(recipe_name):
     with open('egoerror_config_default.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
-    recipe_logs_folder = f"/data/error_dataset/logs/{recipe_name_folder}"
-    recipe_data_path = f"/data/error_dataset/categories/{recipe_name_folder}"
+    root_folder = "/data/lab/rohith/ptg"
+
+    recipe_logs_folder = f"{root_folder}/logs/{recipe_name_folder}"
+    recipe_data_path = f"{root_folder}/{recipe_name_folder}/normal/"
 
     data['ANNOTATION']['CATEGORY'] = recipe_name_folder
     data['LOG']['DIR'] = recipe_logs_folder
     data['TCC']['DATA_PATH'] = recipe_data_path
     if os.path.exists(recipe_logs_folder):
         # Parse the logs folder to get the last checkpoint or checkpoint with the lowest loss
-        ckpt_logs_folder = f"/data/logs/{recipe_name_folder}"
+        ckpt_logs_folder = recipe_logs_folder
         ckpt_names = [f for f in os.listdir(ckpt_logs_folder) if f.endswith('.pt')]
 
         # Extract the loss value from the file names and sort the list based on the loss
