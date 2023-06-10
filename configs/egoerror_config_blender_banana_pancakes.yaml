@@ -23,7 +23,7 @@ MISC:
 TCC:
   BATCH_SIZE: 2
   BILSTM: false
-  CONTEXT_STRIDE:
+  CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/BlenderBananaPancakes/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
