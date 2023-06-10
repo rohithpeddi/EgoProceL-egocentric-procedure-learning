@@ -7,9 +7,9 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /data/error_dataset/annotations
-  FRAMES_PATH: /data/error_dataset/frames
-  VIDEOS_PATH: /data/error_dataset/categories
+  ANNS_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal/annotations
+  FRAMES_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal/frames
+  VIDEOS_PATH: /data/lab/rohith/ptg/BroccoliStirFry/normal/categories
 LAV:
   CONTRIB_PERCENT: 0.1
   USE_CIDM: true

@@ -47,6 +47,11 @@ def update_yaml_file(recipe_name):
     data['ANNOTATION']['CATEGORY'] = recipe_name_folder
     data['LOG']['DIR'] = recipe_logs_folder
     data['TCC']['DATA_PATH'] = recipe_data_path
+
+    data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_data_path, 'annotations')
+    data['EGO_ERROR']['FRAMES_PATH'] = os.path.join(recipe_data_path, 'frames')
+    data['EGO_ERROR']['VIDEOS_PATH'] = os.path.join(recipe_data_path, 'categories')
+
     if os.path.exists(recipe_logs_folder):
         # Parse the logs folder to get the last checkpoint or checkpoint with the lowest loss
         ckpt_logs_folder = recipe_logs_folder
