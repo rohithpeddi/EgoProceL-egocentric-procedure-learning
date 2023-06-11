@@ -28,7 +28,7 @@ commands=(
     "nohup python -m RepLearn.TCC.main --cfg configs/egoerror_config_zoodles.yaml &"
 )
 
-step_size=4  # Number of commands to execute in each step
+step_size=5  # Number of commands to execute in each step
 interval=180  # 3 minutes
 sleep_time=$((3 * 60 * 60))  # 3 hours in seconds
 
