@@ -39,7 +39,8 @@ def update_yaml_file(recipe_name):
     with open('egoerror_config_default.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
-    root_folder = "/data/egoproceldata"
+    # root_folder = "/data/egoproceldata"
+    root_folder = "/home/ptg/egoproceldata"
     recipe_data_path = os.path.join(root_folder, recipe_name_folder)
     recipe_logs_folder = os.path.join(recipe_data_path, "logs")
     recipe_videos_folder = os.path.join(recipe_data_path, "videos")
@@ -47,8 +48,8 @@ def update_yaml_file(recipe_name):
 
     data['LOG']['DIR'] = recipe_logs_folder
 
-    data['LAV']['USE_CIDM'] = True
-    data['LAV']['CONTRIB_PERCENT'] = 0.5
+    data['LAV']['USE_CIDM'] = False
+    data['LAV']['CONTRIB_PERCENT'] = 0.0
 
     data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_videos_folder, "normal")
     data['TCC']['DATA_PATH'] = os.path.join(recipe_videos_folder, "normal")

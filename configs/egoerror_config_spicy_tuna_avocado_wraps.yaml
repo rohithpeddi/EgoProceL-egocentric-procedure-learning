@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: /data/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
+  CATEGORY: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,14 +7,14 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /data/egoproceldata/SpicyTunaAvocadoWraps/annotations/normal
-  FRAMES_PATH: /data/egoproceldata/SpicyTunaAvocadoWraps/frames
-  VIDEOS_PATH: /data/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
+  ANNS_PATH: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/annotations/normal
+  FRAMES_PATH: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/frames
+  VIDEOS_PATH: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
 LAV:
-  CONTRIB_PERCENT: 0.5
-  USE_CIDM: true
+  CONTRIB_PERCENT: 0.0
+  USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/SpicyTunaAvocadoWraps/logs
+  DIR: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/logs
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /data/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
+  DATA_PATH: /home/ptg/egoproceldata/SpicyTunaAvocadoWraps/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt
