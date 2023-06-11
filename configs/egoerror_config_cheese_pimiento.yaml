@@ -11,7 +11,7 @@ EGO_ERROR:
   FRAMES_PATH: /data/egoproceldata/CheesePimiento/frames
   VIDEOS_PATH: /data/egoproceldata/CheesePimiento/videos/normal
 LAV:
-  CONTRIB_PERCENT: 0.3
+  CONTRIB_PERCENT: 0.5
   USE_CIDM: true
 LOG:
   DIR: /data/egoproceldata/CheesePimiento/logs
