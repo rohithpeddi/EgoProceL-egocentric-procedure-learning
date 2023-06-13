@@ -20,7 +20,7 @@ recipes_id_name_dict = {
     18: "Zoodles",
     20: "Sauted Mushrooms",
     21: "Blender Banana Pancakes",
-    22: "Herb Omelet with Fried Tomatoes",
+    22: "Herb Omelet With Fried Tomatoes",
     23: "Broccoli Stir Fry",
     25: "Pan Fried Tofu",
     26: "Mug Cake",
@@ -30,7 +30,7 @@ recipes_id_name_dict = {
 }
 recipe_name_id_dict = {v: k for k, v in recipes_id_name_dict.items()}
 
-recipe_names = recipes_id_name_dict.values()
+recipe_names = sorted(recipes_id_name_dict.values())
 
 
 def update_yaml_file(recipe_name):
@@ -39,8 +39,8 @@ def update_yaml_file(recipe_name):
     with open('egoerror_config_default.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
-    # root_folder = "/data/egoproceldata"
-    root_folder = "/home/ptg/egoproceldata"
+    root_folder = "/data/egoproceldata"
+    # root_folder = "/home/ptg/egoproceldata"
     recipe_data_path = os.path.join(root_folder, recipe_name_folder)
     recipe_logs_folder = os.path.join(recipe_data_path, "logs")
     recipe_videos_folder = os.path.join(recipe_data_path, "videos")
@@ -51,7 +51,7 @@ def update_yaml_file(recipe_name):
     data['LAV']['USE_CIDM'] = False
     data['LAV']['CONTRIB_PERCENT'] = 0.0
 
-    data['ANNOTATION']['CATEGORY'] = os.path.join(recipe_videos_folder, "normal")
+    data['ANNOTATION']['CATEGORY'] = recipe_name_folder
     data['TCC']['DATA_PATH'] = os.path.join(recipe_videos_folder, "normal")
 
     data['EGO_ERROR']['ANNS_PATH'] = os.path.join(recipe_annotations_folder, "normal")

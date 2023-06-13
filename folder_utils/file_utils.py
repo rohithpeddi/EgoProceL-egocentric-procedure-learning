@@ -26,9 +26,30 @@ def get_category_metadata(cfg, metadata=None):
     """
     if cfg.ANNOTATION.DATASET_NAME == 'EGO_ERROR':
         keysteps_dict = {
-            'SpicedHotChocolate': 7,
-            'TomatoMozzarellaSalad': 9,
+            'BlenderBananaPancakes': 8,
+            'BreakfastBurritos': 12,
+            'BroccoliStirFry': 13,
+            'ButterCornCup': 9,
+            'CapreseBruschetta': 7,
+            'CheesePimiento': 10,
+            'Coffee': 17,
+            'CucumberRaita': 8,
+            'DressedUpMeatballs': 14,
+            'HerbOmeletWithFriedTomatoes': 9,
+            'MicrowaveEggSandwich': 9,
+            'MicrowaveFrenchToast': 8,
+            'MicrowaveMugPizza': 12,
+            'MugCake': 17,
+            'PanFriedTofu': 10,
             'Pinwheels': 20,
+            'Ramen': 11,
+            'SautedMushrooms': 11,
+            'ScrambledEggs': 16,
+            'SpicedHotChocolate': 7,
+            'SpicyTunaAvocadoWraps': 8,
+            'TomatoChutney': 15,
+            'TomatoMozzarellaSalad': 8,
+            'Zoodles': 11,
         }
         return {'num_keysteps': keysteps_dict[cfg.ANNOTATION.CATEGORY]}
     if cfg.ANNOTATION.DATASET_NAME == 'EGTEA_GazeP':

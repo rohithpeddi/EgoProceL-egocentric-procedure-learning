@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: /home/ptg/egoproceldata/Ramen/videos/normal
+  CATEGORY: Ramen
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,14 +7,14 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /home/ptg/egoproceldata/Ramen/annotations/normal
-  FRAMES_PATH: /home/ptg/egoproceldata/Ramen/frames
-  VIDEOS_PATH: /home/ptg/egoproceldata/Ramen/videos/normal
+  ANNS_PATH: /data/egoproceldata/Ramen/annotations/normal
+  FRAMES_PATH: /data/egoproceldata/Ramen/frames
+  VIDEOS_PATH: /data/egoproceldata/Ramen/videos/normal
 LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /home/ptg/egoproceldata/Ramen/logs
+  DIR: /data/egoproceldata/Ramen/logs
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -23,10 +23,10 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /home/ptg/egoproceldata/Ramen/videos/normal
+  DATA_PATH: /data/egoproceldata/Ramen/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
-  MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt
+  MODEL_PATH: /data/egoproceldata/Ramen/logs/checkpoint_09077_loss-23.2693.pt
   NUM_CONTEXT_STEPS: 2
   NUM_FRAMES: 32
   TRAIN_EPOCHS: 10000

@@ -1,5 +1,5 @@
 ANNOTATION:
-  CATEGORY: /home/ptg/egoproceldata/Zoodles/videos/normal
+  CATEGORY: Zoodles
 DATA_LOADER:
   CROP_SIZE: 224
   NUM_WORKERS: 0
@@ -7,14 +7,14 @@ DATA_LOADER:
   SAMPLING_FPS: 2
   SHUFFLE: false
 EGO_ERROR:
-  ANNS_PATH: /home/ptg/egoproceldata/Zoodles/annotations/normal
-  FRAMES_PATH: /home/ptg/egoproceldata/Zoodles/frames
-  VIDEOS_PATH: /home/ptg/egoproceldata/Zoodles/videos/normal
+  ANNS_PATH: /data/egoproceldata/Zoodles/annotations/normal
+  FRAMES_PATH: /data/egoproceldata/Zoodles/frames
+  VIDEOS_PATH: /data/egoproceldata/Zoodles/videos/normal
 LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /home/ptg/egoproceldata/Zoodles/logs
+  DIR: /data/egoproceldata/Zoodles/logs
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -23,7 +23,7 @@ TCC:
   BATCH_SIZE: 2
   BILSTM: false
   CONTEXT_STRIDE: 15
-  DATA_PATH: /home/ptg/egoproceldata/Zoodles/videos/normal
+  DATA_PATH: /data/egoproceldata/Zoodles/videos/normal
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/logs/RecipeName/checkpoint_04230_loss-5.3154.pt
