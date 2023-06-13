@@ -43,6 +43,7 @@ def setup_logging(output_dir=None, level='info', bypass=False):
                 logger.critical(f'{output_dir} exists. Performing the same '
                                 'experiment again?')
                 cont = input('Continue? (y/n) ')
+                # cont = 'y'
                 if cont == 'y':
                     pass
                 else:
