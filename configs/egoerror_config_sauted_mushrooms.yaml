@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/SautedMushrooms/logs
+  DIR: /data/egoproceldata/SautedMushrooms/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,6 +24,7 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/SautedMushrooms/videos/normal
+  EMBDS_DIR: /data/egoproceldata/SautedMushrooms/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/egoproceldata/SautedMushrooms/logs/checkpoint_00066_loss-10.1849.pt

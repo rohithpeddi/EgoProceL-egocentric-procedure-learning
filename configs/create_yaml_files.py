@@ -70,6 +70,8 @@ def update_yaml_file(recipe_name):
         lowest_loss_checkpoint = sorted_files[0]
         print("Checkpoint file with the lowest loss:", lowest_loss_checkpoint)
         data['TCC']['MODEL_PATH'] = os.path.join(ckpt_logs_folder, lowest_loss_checkpoint)
+        data['TCC']['EMBDS_DIR'] = os.path.join(recipe_data_path, "embeddings")
+        data['LOG']['DIR'] = os.path.join(recipe_data_path, "logs_test")
 
     with open(f'egoerror_config_{recipe_name_}.yaml', 'w') as file:
         yaml.dump(data, file)

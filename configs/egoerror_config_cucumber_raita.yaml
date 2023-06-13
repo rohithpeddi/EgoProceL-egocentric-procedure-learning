@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/CucumberRaita/logs
+  DIR: /data/egoproceldata/CucumberRaita/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,6 +24,7 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/CucumberRaita/videos/normal
+  EMBDS_DIR: /data/egoproceldata/CucumberRaita/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/egoproceldata/CucumberRaita/logs/checkpoint_08519_loss-28.2340.pt

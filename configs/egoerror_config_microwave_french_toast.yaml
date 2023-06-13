@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/MicrowaveFrenchToast/logs
+  DIR: /data/egoproceldata/MicrowaveFrenchToast/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,6 +24,7 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/MicrowaveFrenchToast/videos/normal
+  EMBDS_DIR: /data/egoproceldata/MicrowaveFrenchToast/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/egoproceldata/MicrowaveFrenchToast/logs/checkpoint_08189_loss-28.1458.pt

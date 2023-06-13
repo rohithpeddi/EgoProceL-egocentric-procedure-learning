@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/DressedUpMeatballs/logs
+  DIR: /data/egoproceldata/DressedUpMeatballs/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,9 +24,10 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/DressedUpMeatballs/videos/normal
+  EMBDS_DIR: /data/egoproceldata/DressedUpMeatballs/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
-  MODEL_PATH: /data/egoproceldata/DressedUpMeatballs/logs/checkpoint_03651_loss-20.0505.pt
+  MODEL_PATH: /data/egoproceldata/DressedUpMeatballs/logs/checkpoint_09880_loss-19.8075.pt
   NUM_CONTEXT_STEPS: 2
   NUM_FRAMES: 32
   TRAIN_EPOCHS: 10000

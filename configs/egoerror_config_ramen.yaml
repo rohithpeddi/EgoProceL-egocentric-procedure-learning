@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/Ramen/logs
+  DIR: /data/egoproceldata/Ramen/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,6 +24,7 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/Ramen/videos/normal
+  EMBDS_DIR: /data/egoproceldata/Ramen/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/egoproceldata/Ramen/logs/checkpoint_09077_loss-23.2693.pt

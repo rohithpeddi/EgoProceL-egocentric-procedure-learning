@@ -14,7 +14,7 @@ LAV:
   CONTRIB_PERCENT: 0.0
   USE_CIDM: false
 LOG:
-  DIR: /data/egoproceldata/CheesePimiento/logs
+  DIR: /data/egoproceldata/CheesePimiento/logs_test
   LEVEL: debug
 MISC:
   DEBUG_VIZ_PATH: ''
@@ -24,6 +24,7 @@ TCC:
   BILSTM: false
   CONTEXT_STRIDE: 15
   DATA_PATH: /data/egoproceldata/CheesePimiento/videos/normal
+  EMBDS_DIR: /data/egoproceldata/CheesePimiento/embeddings
   KMEANS_NUM_CLUSTERS: 30
   LSTM: false
   MODEL_PATH: /data/egoproceldata/CheesePimiento/logs/checkpoint_09738_loss-22.8262.pt
