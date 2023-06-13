@@ -36,8 +36,11 @@ class Ego_Error(torch.utils.data.Dataset):
 		self.category = self.cfg.ANNOTATION.CATEGORY
 		if self.cfg.MISC.VERBOSE:
 			logger.debug('Processing category: {}'.format(self.category))
-		videos_path = os.path.join(videos_dir, self.category)
-		anns_path = os.path.join(annotations_dir, self.category)
+		# videos_path = os.path.join(videos_dir, self.category)
+		# anns_path = os.path.join(annotations_dir, self.category)
+		videos_path = videos_dir
+		anns_path = annotations_dir
+
 		self.videos = [
 			os.path.join(videos_path, file) for file in os.listdir(videos_path)
 		]
